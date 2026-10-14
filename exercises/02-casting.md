@@ -6,14 +6,14 @@ Predict first. Then run.
 
 | # | Expression | Predicted | Actual |
 |---|---|---|---|
-| 1 | `(int) 9.99` | | |
-| 2 | `(int) -9.99` | | |
-| 3 | `Math.round(9.5)` | | |
-| 4 | `Math.round(9.4)` | | |
-| 5 | `Math.round(-9.5)` | | |
-| 6 | `(double) 7 / 2` | | |
-| 7 | `(double) (7 / 2)` | | |
-| 8 | `Math.round(3.14159 * 100) / 100.0` | | |
+| 1 | `(int) 9.99` |9 | |
+| 2 | `(int) -9.99` |-9 | |
+| 3 | `Math.round(9.5)` |10 | |
+| 4 | `Math.round(9.4)` |9 | |
+| 5 | `Math.round(-9.5)` |-9 | |
+| 6 | `(double) 7 / 2` |3.5 | |
+| 7 | `(double) (7 / 2)` |3.0 | |
+| 8 | `Math.round(3.14159 * 100) / 100.0` |3.14| |
 
 **#6 and #7 look almost identical and give different answers. Explain the difference precisely.**
 
