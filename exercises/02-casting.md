@@ -38,23 +38,31 @@ System.out.println("Min - 1:      " + (min - 1));
 
 **1. What is `Integer.MAX_VALUE`?**
 
-[your answer]
+2,147,483,647, the largest value an int can store.
+
+
 
 **2. What happened when you added 1 to it? Was there an error message?**
 
-[your answer]
+It wrapped around to -2,147,483,648. There was no error message.
+
+
 
 **3. Why is silently wrapping around more dangerous than crashing with an error?**
 
-[your answer]
+It can cause incorrect results without anyone noticing.
+
+
 
 **4. In 2014 a very popular music video broke YouTube's view counter. Based on this lab, what do you think happened?**
 
-[your answer]
+It likely overflowed because the counter reached its maximum value.
+
+
 
 **5. Name one thing your project might count that could get large. Would `int` be enough?**
 
-[your answer]
+A website's views. An int might not be enough if the number gets too large.
 
 ---
 
@@ -69,12 +77,15 @@ System.out.println(0.1 + 0.2 == 0.3);
 
 **1. What did you expect? What did you get?**
 
-[your answer]
+I expected the answer to be exact, but I got a slightly different result because of rounding errors.
 
 **2. Given this, why do you think real banking software stores money as a whole number of *cents* instead of a `double` number of dollars?**
 
-[your answer]
+Because whole numbers of cents avoid floating-point rounding errors and make money calculations more accurate.
 
 **3. If you can't use `==` to compare two doubles, what could you do instead? Write a line of code.**
 
-[your answer]
+Compare the difference using a small tolerance:
+
+java
+Math.abs(a - b) < 0.0001
